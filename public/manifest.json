@@ -1,12 +1,16 @@
 {
   "name": "Slither.io Game",
   "short_name": "Slither",
-  "description": "¡Juego de serpientes multijugador! Crece, compite y domina.",
+  "id": "/slither-pwa",
+  "description": "¡Juego de serpientes multijugador! Crece, compite y domina a tus oponentes en esta versión optimizada.",
   "start_url": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
   "background_color": "#1a1a2e",
   "theme_color": "#00ff88",
   "orientation": "any",
+  "lang": "es-MX",
+  "dir": "ltr",
   "categories": ["games", "entertainment"],
   "icons": [
     {
@@ -43,19 +47,29 @@
       "src": "/icons/ios/180.png",
       "sizes": "180x180",
       "type": "image/png"
-    },
-    {
-      "src": "/icons/ios/192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icons/ios/1024.png",
-      "sizes": "1024x1024",
-      "type": "image/png"
     }
   ],
-  "screenshots": [],
-  "related_applications": [],
-  "prefer_related_applications": false
+  "screenshots": [
+    {
+      "src": "/icons/android/launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Slither Gameplay"
+    },
+    {
+      "src": "/icons/android/launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Slither Menu"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Jugar Ahora",
+      "url": "/",
+      "icons": [{ "src": "/icons/android/launchericon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
 }
